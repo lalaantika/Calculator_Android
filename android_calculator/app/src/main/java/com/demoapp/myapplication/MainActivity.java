@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
             buttoneql, buttonAC;
 
     EditText calEditText;
+
     float mValueOne, mValueTwo;
+    boolean add, sub, mul, div;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +40,133 @@ public class MainActivity extends AppCompatActivity {
         buttondot = (Button) findViewById(R.id.buttondot);
         buttoneql = (Button) findViewById(R.id.buttoneql);
         calEditText = (EditText) findViewById(R.id.edit);
-        button0.setOnClickListener(new View.OnClickListener() {
-            //@Override
-            public void onClick(View v) {
-                calEditText.setText(calEditText.getText() + "0");
-            }
 
+        button0.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "0");
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "1");
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "2");
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "3");
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "4");
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "5");
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "6");
+            }
+        });
+
+        button7.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "7");
+            }
+        });
+
+        button8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "8");
+            }
+        });
+
+        button9.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ "9");
+            }
+        });
+
+        buttonAC.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText("");
+            }
+        });
+
+        buttondot.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                calEditText.setText(calEditText.getText()+ ".");
+            }
+        });
+
+        buttonadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    add = true;
+                    calEditText.setText(null);
+                }
+            }
+        });
+
+        buttonsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    sub = true;
+                    calEditText.setText(null);
+                }
+            }
         });
 
 
+        buttoneql.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueTwo = Float.parseFloat(calEditText.getText() + "");
+
+                if(add==true){
+                    calEditText.setText(mValueOne+mValueTwo+"");
+                    add = false;
+                }
+
+                if(sub==true){
+                    calEditText.setText(mValueOne-mValueTwo + "");
+                    sub = false;
+                }
+            }
+        });
     }
 }
