@@ -153,20 +153,56 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button_multiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    mul = true;
+                    calEditText.setText(null);
+                }
+            }
+        });
+
+        button_divide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    div = true;
+                    calEditText.setText(null);
+                }
+            }
+        });
+
 
         button_eql.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(calEditText.getText() + "");
 
-                if(add==true){
-                    calEditText.setText(mValueOne+mValueTwo+"");
+                if(add){
+                    calEditText.setText(mValueOne+mValueTwo + "");
                     add = false;
                 }
 
-                if(sub==true){
+                if(sub){
                     calEditText.setText(mValueOne-mValueTwo + "");
                     sub = false;
+                }
+
+                if(mul){
+                    calEditText.setText(mValueOne*mValueTwo + "");
+                    mul = false;
+                }
+
+                if(div){
+                    calEditText.setText(mValueOne/mValueTwo + "");
+                    div = false;
                 }
             }
         });
