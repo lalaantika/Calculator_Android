@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="85dp"
         android:text="AC"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/button0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
@@ -55,7 +55,7 @@
         android:layout_height="60dp"
         android:text="."
         app:layout_constraintEnd_toStartOf="@+id/button_divide"
-        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/button0"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
@@ -137,7 +137,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button_sub" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button0"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:text="0"
@@ -174,14 +174,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-    <TextView
+    <EditText
         android:id="@+id/screen"
         android:layout_width="241dp"
         android:layout_height="38dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="125dp"
         android:fontFamily="sans-serif-black"
-        android:text="TextView"
         android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
