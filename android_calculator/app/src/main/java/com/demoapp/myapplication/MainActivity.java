@@ -151,6 +151,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonmul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    mul = true;
+                    calEditText.setText(null);
+                }
+            }
+        });
+
+        buttondiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(calEditText == null){
+                    calEditText.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(calEditText.getText()+"");
+                    div = true;
+                    calEditText.setText(null);
+                }
+            }
+        });
 
         buttoneql.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,6 +191,17 @@ public class MainActivity extends AppCompatActivity {
                     calEditText.setText(mValueOne-mValueTwo + "");
                     sub = false;
                 }
+
+                if(mul==true){
+                    calEditText.setText(mValueOne*mValueTwo+"");
+                    mul = false;
+                }
+
+                if(div==true){
+                    calEditText.setText(mValueOne/mValueTwo+"");
+                    div = false;
+                }
+
             }
         });
     }
