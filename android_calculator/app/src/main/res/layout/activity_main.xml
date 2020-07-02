@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edit"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My 1st Calculator"
@@ -72,7 +72,7 @@
         android:layout_height="60dp"
         android:text="+"
         app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/screen" />
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <Button
         android:id="@+id/button8"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button_add"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/screen" />
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <Button
         android:id="@+id/button7"
@@ -91,7 +91,7 @@
         android:layout_marginStart="85dp"
         android:text="7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/screen" />
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <Button
         android:id="@+id/button9"
@@ -100,7 +100,7 @@
         android:text="9"
         app:layout_constraintEnd_toStartOf="@+id/button_add"
         app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/screen" />
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <Button
         android:id="@+id/button_sub"
@@ -175,15 +175,15 @@
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <EditText
-        android:id="@+id/screen"
+        android:id="@+id/edit"
         android:layout_width="242dp"
-        android:layout_height="38dp"
+        android:layout_height="75dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="125dp"
         android:fontFamily="sans-serif-black"
         android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
