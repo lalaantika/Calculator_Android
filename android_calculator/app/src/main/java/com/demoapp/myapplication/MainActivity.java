@@ -1,9 +1,10 @@
-ackage com.demoapp.myapplication;
+package com.demoapp.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -28,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
         button7 = (Button) findViewById(R.id.button7);
         button8 = (Button) findViewById(R.id.button8);
         button9 = (Button) findViewById(R.id.button9);
-        button_add = (Button) findViewById(R.id.buttonadd);
-        button_sub = (Button) findViewById(R.id.buttonsub);
-        button_multiply = (Button) findViewById(R.id.buttonmul);
-        button_divide = (Button) findViewById(R.id.buttondiv);
-        button_ac = (Button) findViewById(R.id.buttonAC);
-        button_period = (Button) findViewById(R.id.buttondot);
-        button_eql = (Button) findViewById(R.id.buttoneql);
+        button_add = (Button) findViewById(R.id.button_add);
+        button_sub = (Button) findViewById(R.id.button_sub);
+        button_multiply = (Button) findViewById(R.id.button_multiply);
+        button_divide = (Button) findViewById(R.id.button_divide);
+        button_ac = (Button) findViewById(R.id.button_ac);
+        button_period = (Button) findViewById(R.id.button_period);
+        button_eql = (Button) findViewById(R.id.button_eql);
         calEditText = (EditText) findViewById(R.id.edit);
 
         button0.setOnClickListener(new View.OnClickListener(){
