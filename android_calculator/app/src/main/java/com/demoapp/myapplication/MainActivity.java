@@ -9,8 +9,9 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     Button button0, button1, button2, button3, button4, button5,
-            button6, button7, button8, button9, buttondot, buttonadd, buttonsub, buttondiv, buttonmul,
-            buttoneql, buttonAC;
+            button6, button7, button8, button9,
+            button_dot, button_add, button_sub, button_div, button_mul,
+            button_eql, buttonAC;
 
     EditText calEditText;
 
@@ -32,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
         button7 = (Button) findViewById(R.id.button7);
         button8 = (Button) findViewById(R.id.button8);
         button9 = (Button) findViewById(R.id.button9);
-        buttonadd = (Button) findViewById(R.id.buttonadd);
-        buttonsub = (Button) findViewById(R.id.buttonsub);
-        buttonmul = (Button) findViewById(R.id.buttonmul);
-        buttondiv = (Button) findViewById(R.id.buttondiv);
+        button_add = (Button) findViewById(R.id.button_add);
+        button_sub = (Button) findViewById(R.id.button_sub);
+        button_mul = (Button) findViewById(R.id.button_mul);
+        button_div = (Button) findViewById(R.id.button_div);
         buttonAC = (Button) findViewById(R.id.buttonAC);
-        buttondot = (Button) findViewById(R.id.buttondot);
-        buttoneql = (Button) findViewById(R.id.buttoneql);
+        button_dot = (Button) findViewById(R.id.button_dot);
+        button_eql = (Button) findViewById(R.id.button_eql);
         calEditText = (EditText) findViewById(R.id.edit);
 
         button0.setOnClickListener(new View.OnClickListener(){
@@ -118,14 +119,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttondot.setOnClickListener(new View.OnClickListener(){
+        button_dot.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 calEditText.setText(calEditText.getText()+ ".");
             }
         });
 
-        buttonadd.setOnClickListener(new View.OnClickListener() {
+        button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -138,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonsub.setOnClickListener(new View.OnClickListener() {
+        button_sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonmul.setOnClickListener(new View.OnClickListener() {
+        button_mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttondiv.setOnClickListener(new View.OnClickListener() {
+        button_div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -177,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttoneql.setOnClickListener(new View.OnClickListener() {
+        button_eql.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(calEditText.getText() + "");

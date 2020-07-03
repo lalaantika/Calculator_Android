@@ -55,7 +55,7 @@
             tools:layout_editor_absoluteY="406dp" />
 
         <Button
-            android:id="@+id/buttonadd"
+            android:id="@+id/button_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
@@ -93,7 +93,7 @@
             tools:layout_editor_absoluteY="406dp" />
 
         <Button
-            android:id="@+id/buttonsub"
+            android:id="@+id/button_sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
@@ -131,7 +131,7 @@
             tools:layout_editor_absoluteY="406dp" />
 
         <Button
-            android:id="@+id/buttondiv"
+            android:id="@+id/button_div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
@@ -161,7 +161,7 @@
             tools:layout_editor_absoluteY="406dp" />
 
         <Button
-            android:id="@+id/buttondot"
+            android:id="@+id/button_dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="."
@@ -169,7 +169,7 @@
             tools:layout_editor_absoluteY="406dp" />
 
         <Button
-            android:id="@+id/buttonmul"
+            android:id="@+id/button_mul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x"
@@ -183,7 +183,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/buttoneql"
+            android:id="@+id/button_eql"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:text="="
