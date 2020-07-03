@@ -19,10 +19,12 @@
         app:layout_constraintVertical_bias="0.115" />
 
     <EditText
-        android:id="@+id/edit"
+        android:id="@+id/CalScreen"
         android:layout_width="360dp"
         android:layout_height="81dp"
+        android:inputType="textPersonName"
         android:text=""
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="295dp" />
 
@@ -35,6 +37,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -43,6 +49,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="118dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -51,6 +61,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="218dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -59,6 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="323dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -73,6 +91,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -81,6 +103,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="118dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -89,6 +115,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="218dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -97,6 +127,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="323dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -111,6 +145,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -119,6 +157,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="118dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -127,6 +169,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="218dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -135,6 +181,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="323dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -149,6 +199,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AC"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -157,6 +211,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -165,6 +223,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -173,6 +235,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
 
@@ -187,17 +253,13 @@
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:text="="
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="406dp" />
     </TableRow>
-
-    <EditText
-        android:id="@+id/edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 
 </LinearLayout>
 

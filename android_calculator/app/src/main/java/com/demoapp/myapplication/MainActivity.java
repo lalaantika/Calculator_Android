@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAC = (Button) findViewById(R.id.buttonAC);
         buttondot = (Button) findViewById(R.id.buttondot);
         buttoneql = (Button) findViewById(R.id.buttoneql);
-        calEditText = (EditText) findViewById(R.id.edit);
+        calEditText = (EditText) findViewById(R.id.CalScreen);
 
         button0.setOnClickListener(new View.OnClickListener(){
             @Override
