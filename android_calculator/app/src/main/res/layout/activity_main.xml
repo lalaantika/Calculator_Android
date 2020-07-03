@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#090808"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
@@ -27,7 +28,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="85dp"
-        android:background="#F44336"
+        android:background="#FF5722"
         android:text="AC"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -233,7 +234,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="125dp"
-        android:background="#0B0A0A"
+        android:background="#350202"
         android:fontFamily="sans-serif-black"
         android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
