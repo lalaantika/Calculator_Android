@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#090808"
+    android:windowSoftInputMode="stateHidden"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
@@ -219,8 +220,11 @@
         android:layout_height="75dp"
         android:layout_marginStart="225dp"
         android:background="#350202"
+        android:clickable="false"
         android:fontFamily="sans-serif-black"
-        android:textAlignment="viewEnd"
+        android:inputType="number"
+        android:paddingEnd="10dp"
+        android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#FBFAFA"
         app:layout_constraintStart_toStartOf="parent"
