@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         button_ac.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                calEditText.setText("");
+                calEditText.setText("0");
             }
         });
 
