@@ -218,7 +218,7 @@
         android:layout_width="285dp"
         android:layout_height="75dp"
         android:layout_marginStart="225dp"
-        android:background="#0B0A0A"
+        android:background="#350202"
         android:fontFamily="sans-serif-black"
         android:textAlignment="viewEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
