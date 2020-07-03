@@ -2,15 +2,16 @@ package com.demoapp.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
-    Button button0, button1, button2, button3, button4, button5,
-            button6, button7, button8, button9, buttondot, buttonadd, buttonsub, buttondiv, buttonmul,
-            buttoneql, buttonAC;
+    Button button0, button1, button2, button3, button4, button5, button6, button7, button8,
+            button9, button_add, button_sub, button_multiply, button_divide, button_ac, button_eql, button_period;
 
     EditText calEditText;
 
@@ -32,16 +33,17 @@ public class MainActivity extends AppCompatActivity {
         button7 = (Button) findViewById(R.id.button7);
         button8 = (Button) findViewById(R.id.button8);
         button9 = (Button) findViewById(R.id.button9);
-        buttonadd = (Button) findViewById(R.id.buttonadd);
-        buttonsub = (Button) findViewById(R.id.buttonsub);
-        buttonmul = (Button) findViewById(R.id.buttonmul);
-        buttondiv = (Button) findViewById(R.id.buttondiv);
-        buttonAC = (Button) findViewById(R.id.buttonAC);
-        buttondot = (Button) findViewById(R.id.buttondot);
-        buttoneql = (Button) findViewById(R.id.buttoneql);
+        button_add = (Button) findViewById(R.id.button_add);
+        button_sub = (Button) findViewById(R.id.button_sub);
+        button_multiply = (Button) findViewById(R.id.button_multiply);
+        button_divide = (Button) findViewById(R.id.button_divide);
+        button_ac = (Button) findViewById(R.id.button_ac);
+        button_period = (Button) findViewById(R.id.button_period);
+        button_eql = (Button) findViewById(R.id.button_eql);
         calEditText = (EditText) findViewById(R.id.edit);
 
         button0.setOnClickListener(new View.OnClickListener(){
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v){
                 calEditText.setText(calEditText.getText()+ "0");
@@ -111,21 +113,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonAC.setOnClickListener(new View.OnClickListener(){
+        button_ac.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 calEditText.setText("");
             }
         });
 
-        buttondot.setOnClickListener(new View.OnClickListener(){
+        button_period.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 calEditText.setText(calEditText.getText()+ ".");
             }
         });
 
-        buttonadd.setOnClickListener(new View.OnClickListener() {
+        button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -138,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonsub.setOnClickListener(new View.OnClickListener() {
+        button_sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -151,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonmul.setOnClickListener(new View.OnClickListener() {
+        button_multiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -164,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttondiv.setOnClickListener(new View.OnClickListener() {
+        button_divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(calEditText == null){
@@ -177,31 +179,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttoneql.setOnClickListener(new View.OnClickListener() {
+
+        button_eql.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(calEditText.getText() + "");
 
-                if(add==true){
-                    calEditText.setText(mValueOne+mValueTwo+"");
+                if(add){
+                    calEditText.setText(mValueOne+mValueTwo + "");
                     add = false;
                 }
 
-                if(sub==true){
+                if(sub){
                     calEditText.setText(mValueOne-mValueTwo + "");
                     sub = false;
                 }
 
-                if(mul==true){
-                    calEditText.setText(mValueOne*mValueTwo+"");
+                if(mul){
+                    calEditText.setText(mValueOne*mValueTwo + "");
                     mul = false;
                 }
 
-                if(div==true){
-                    calEditText.setText(mValueOne/mValueTwo+"");
+                if(div){
+                    calEditText.setText(mValueOne/mValueTwo + "");
                     div = false;
                 }
-
             }
         });
     }
